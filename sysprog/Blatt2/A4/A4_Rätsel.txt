@@ -1,0 +1,28 @@
+/* Programm A */
+double cube(int);
+int cube(int);
+
+In C kann man keine funktionen überladen.
+Eine Lösung wäre, andere Namen für Funktionen vergeben.
+Zum Beispiel
+double cube_double(int);
+und 
+int cube_int(int);
+======================================================
+/* Programm B */
+double square(double number) {
+double number;
+return number*number;
+}
+
+Die Vatiable number wird nochmals deklariert und ist somit nicht die übergebene variable.
+Lösung: double number; wecklassen!
+======================================================
+/* Programm C */
+float cube(); // function prototype
+cube(float number) { // function definition
+return number*number*number;
+}
+
+Funktion Prototyp und die Definition habe verschiedene return typen und die definition sollte besser als return void haben.
+Lösung: Dem Prototyp und der Definition den return wert float geben.

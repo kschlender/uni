@@ -1,0 +1,7 @@
+No source file named SP_SP_P03_v2.0.c.
+Make breakpoint pending on future shared library load? (y or [n]) 
+Breakpoint 1 (SP_SP_P03_v2.0.c:43) pending.
+Starting program: C:\Users\Nico\Dropbox\InformatikFHB3\IFM-3.4, Systemprogrammierung, Gips, George, WS2013-14\Praktikum\Blatt3\SysProgA5_Debug\SP_P03_V2.0.exe SP_SP_P03_v2.0.c
+[New Thread 5640.0x16a4]
+[Inferior 1 (process 5640) exited normally]
+Undefined command: "exit".  Try "help".

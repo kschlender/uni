@@ -1,0 +1,15 @@
+Was ist das Ergebnis folgender Programme? Begründen Sie Ihre Antwort.
+
+1.
+=============
+Hier ist eine unnötige If/Else Abfrage eingebaut...
+mit x=y in der If Anweisung wird x zu y und das ist True.
+Also wird immer nur der If  Teil bearbeitet und folgende Ausgabe produziert...
+"x: 3"
+
+2.
+=============
+Bei x<y<z wird zuerst...
+x<Y =True(1) vergliechen und dann True(1)<z =Ture(1)
+Ausgabe: "sortiert", obwohl unsortiert.
+Besser währe, x<y && y<z, dann würde das richtige ausgegeben werden.

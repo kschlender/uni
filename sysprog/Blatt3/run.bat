@@ -1,0 +1,4 @@
+@ECHO OFF
+gcc -ansi -o SP_P03_V2.0.exe SP_P03_V2.0.c
+SP_P03_V2.0
+@PAUSE

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187809</millis>
+  <sequence>0</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.tcp.TCPEndpoint</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>main: localHostKnown = true, localHost = 192.168.0.11</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187812</millis>
+  <sequence>1</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.tcp.TCPTransport</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>main: Version = 2, ep = [192.168.0.11:0]</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187812</millis>
+  <sequence>2</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.tcp.TCPEndpoint</class>
+  <method>getLocalEndpoint</method>
+  <thread>1</thread>
+  <message>main: created local endpoint for socket factory null on port 0</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187820</millis>
+  <sequence>3</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.tcp.TCPTransport</class>
+  <method>listen</method>
+  <thread>1</thread>
+  <message>main: (port 0) create server socket</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187820</millis>
+  <sequence>4</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINER</level>
+  <class>sun.rmi.transport.tcp.TCPEndpoint</class>
+  <method>newServerSocket</method>
+  <thread>1</thread>
+  <message>main: creating server socket on [192.168.0.11:0]</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187821</millis>
+  <sequence>5</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.tcp.TCPEndpoint</class>
+  <method>setDefaultPort</method>
+  <thread>1</thread>
+  <message>main: default port for server socket factory null and client socket factory null set to 22040</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187822</millis>
+  <sequence>6</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.tcp.TCPTransport$AcceptLoop</class>
+  <method>executeAcceptLoop</method>
+  <thread>9</thread>
+  <message>RMI TCP Accept-0: listening on port 22040</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187837</millis>
+  <sequence>7</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.tcp.TCPChannel</class>
+  <method>createConnection</method>
+  <thread>1</thread>
+  <message>main: create connection</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187837</millis>
+  <sequence>8</sequence>
+  <logger>sun.rmi.transport.tcp</logger>
+  <level>FINER</level>
+  <class>sun.rmi.transport.tcp.TCPEndpoint</class>
+  <method>newSocket</method>
+  <thread>1</thread>
+  <message>main: opening socket to [localhost:1099]</message>
+</record>
+<record>
+  <date>2013-11-24T22:56:27</date>
+  <millis>1385330187837</millis>
+  <sequence>9</sequence>
+  <logger>sun.rmi.transport.tcp.proxy</logger>
+  <level>FINE</level>
+  <class>sun.rmi.transport.proxy.RMIMasterSocketFactory</class>
+  <method>createSocket</method>
+  <thread>1</thread>
+  <message>main: host: localhost, port: 1099</message>
+</record>

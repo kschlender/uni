@@ -1,0 +1,16 @@
+break [file]:line		//break SP_P03_V2.0.c:43
+set logging file backtrace.log	//log file angeben
+set logging on			//log einschalten
+run [args]			//programm starten
+
+info break			//breakpoint info
+del [breakpoint NR]		//breakpoint mit NR loeschen
+clear filename:linenum		//breakpoint mit dateiname und zeilennummer löschen
+
+info local			//alle lokalen variablen zeigen
+watch [var]			//lokale variablen sind nur in der funktion vorhanden
+
+next				//nechste zeile
+continue			//nechster breakpoint
+finish				//funktion beenden und return zeigen
+kill				//beendet das debugte programm

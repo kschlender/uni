@@ -1,0 +1,4 @@
+Was bedeuten die unterschiedlichen Compileroptionen (-Wall, -Werror, -O3)?
+-Wall: Alle Warnungen anzeigen
+-Werror: Alle Fehler anzeigen
+-O3: Ist eine Optimierung für die Laufzeit bei der Ausführung. (O2,O1 sind schwächer)

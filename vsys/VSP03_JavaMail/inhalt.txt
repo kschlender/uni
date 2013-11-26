@@ -1,0 +1,37 @@
+Das ist ein JavaMail Testtext...<p>
+Aufgabe 1(1P)
+Mail Transfer Agent (Mail entgegennehmen)
+Ein Mail Transfer Agent oder Message Transport Agent (MTA) ist die Software eines Mailservers, die E-Mails entgegennimmt und sendet.
+
+MTAs kommunizieren sehr häufig nach dem Simple Mail Transfer Protocol, aber auch gemäß X.400. Der MTA des Adressaten arbeitet mit dem Mail Delivery Agent des Mailservers zusammen, der die E-Mails in den passenden Postfächern abliefert. Dabei kann das Local Mail Transfer Protocol zum Einsatz kommen. Wenn ein Mailserver als SMTP-Relay ausgelegt ist, kann er auch nur aus einem MTA bestehen.
+ 
+Ein wesentlicher Bestandteil eines MTA ist seine Warteschlange. Dort sammelt er Aufträge, insbesondere wenn der MTA des Adressaten nicht sofort erreichbar ist. In diesem Fall geht er mehrfach die MX Resource Records des Adressaten durch, um den Auftrag abzuarbeiten. 
+Wenn dies misslingt, sendet er dem Absender eine Nachricht zurück, dass seine E-Mail nicht zugestellt werden konnte.
+
+Der MTA ist der Teil eines Mailservers, der am ehesten angegriffen werden kann. Er ist auch die Komponente, bei der sich Maßnahmen zur Abwehr von Spam anbieten.
+
+Mail Delivery Agent (Mail zustellen)
+Ein Mail Delivery Agent (MDA) ist eine Software für die Zustellung von E-Mails an die betreffenden Benutzerkonten.
+
+Mail Delivery Agents sind neben Mail User Agents die beiden ursprünglichen Bestandteile von Systemen für E-Mail. Weil jeder Mail User Agent nur auf ein einziges Benutzerverzeichnis zugreifen kann, wird ein Mail Delivery Agent mit der Zustellung beauftragt, der vom Root-Konto mit erweiterten Zugriffsrechten ausgestattet ist.
+
+Mit dem Client-Server-Modell kamen Mail Transfer Agents und das Simple Mail Transfer Protocol hinzu. Neben diesem Netzwerkprotokoll können Mail Delivery Agents das Local Mail Transfer Protocol nutzen.
+ 
+Senden
+Zum Versand einer E-Mail schickt das E-Mail-Programm des Benutzers diese üblicherweise per Simple Mail Transfer Protocol (SMTP) an einen SMTP-Relay-Server (auch Smarthost), der sie dann weiter zum Mail-Server des Empfängers schickt. Der Nachteil dieses Verfahrens ist, dass bei fehlender Erreichbarkeit des Relay-Servers kein Versand von E-Mails möglich ist.
+Alternativ erfolgt der Versand über einen lokal zur Verfügung stehenden Mail-Transfer-Agenten (MTA). Diese Lösung hat den Vorteil einer lokalen Warteschlange für ausgehende E-Mails und den Nachteil einer aufwendigeren Installation.
+
+Empfangen
+Um eine E-Mail anzuzeigen, kann ein E-Mail-Programm sie entweder direkt auf dem Mail-Server öffnen (meist über IMAP oder IMAPS) oder aber von einem Mailserver herunterladen (meist über POP3 oder POP3S) und dann lokal öffnen, in der Regel, nachdem sie in einem dazu vorher angelegten Benutzer-Postfach abgelegt wurde.
+
+ 
+SMTP
+Das Simple Mail Transfer Protocol (SMTP, zu deutsch etwa Einfaches E-Mail-Transportprotokoll) ist ein Protokoll der Internetprotokollfamilie, das zum Austausch von E-Mails in Computernetzen dient. Es wird dabei vorrangig zum Einspeisen und zum Weiterleiten von E-Mails verwendet. Zum Abholen von Nachrichten kommen andere, spezialisierte Protokolle wie POP3 oder IMAP zum Einsatz.
+POP3
+Das Post Office Protocol (POP) ist ein Übertragungsprotokoll, über das ein Client E-Mails von einem E-Mail-Server abholen kann. Version 3 (POP3) wird im RFC 1939 beschrieben. POP3 ist ein ASCII-Protokoll, wobei die Steuerung der Datenübertragung durch Kommandos geschieht, die standardmäßig an den Port 110 geschickt werden.
+POP3 ist in der Funktionalität sehr beschränkt und erlaubt nur das Auflisten, Abholen und Löschen von E-Mails am E-Mail-Server. Für weitere Funktionalitäten wie hierarchische Mailboxen direkt am Mailserver, Zugriff auf mehrere Mailboxen während einer Sitzung, Vorselektion der E-Mails usw. müssen Protokolle wie IMAP verwendet werden.
+Das Internet Message Access Protocol (IMAP), ursprünglich Interactive Mail Access Protocol, ist ein Netzwerkprotokoll, das ein Netzwerkdateisystem für E-Mails bereitstellt.
+IMAP
+Das Internet Message Access Protocol (IMAP), ursprünglich Interactive Mail Access Protocol, ist ein Netzwerkprotokoll, das ein Netzwerkdateisystem für E-Mails bereitstellt.
+IMAP wurde in den 1980er Jahren mit dem Aufkommen von Personal Computern entworfen, um bei der Mail-Kommunikation Abhängigkeiten von einzelnen Client-Rechnern aufzulösen.[2] Zu diesem Zweck erweitert IMAP die Funktionen und Verfahren von Post Office Protocol (POP) so, dass Benutzer ihre Mails, Ordnerstrukturen und Einstellungen auf den (Mail-)Servern speichern und belassen können. Die (PC-)Clients greifen direkt online auf die Informationen auf den Servern zu und müssen allenfalls Kopien davon beherbergen. Während ein Benutzer von POP nach Verlust seines PC entweder alle E-Mails verloren hat oder bereits gelöschte E-Mails erneut erhält, behält ein Benutzer von IMAP seine Mails auf den Servern und, auch über mehrere und verschiedene Clients hinweg, immer einen einheitlichen Zugriff.
+ 
